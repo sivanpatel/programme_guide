@@ -1,6 +1,6 @@
 <!doctype html>
 <html lang="en" ng-app="Guide">
-  
+
   <head>
     <meta charset="utf-8">
     <title>Programme Guide</title>
@@ -13,6 +13,12 @@
   </head>
 
   <body ng-controller="ProgrammeGuideController as guideCtrl">
+    <ul class="list-group" ng-repeat = "program in guideCtrl.programmes">
+        <li class="list-group-item">
+          <img ng-src="{{program.images.standard}}">
+          {{program.title}}
+        </li>
+      </ul>
   </body>
 
 </html>

@@ -7,4 +7,8 @@ describe('ProgrammeGuideController', function() {
    ctrl = $controller('ProgrammeGuideController')
   }))
 
+  it('initializes with an populated guide', function() {
+    expect(ctrl.programmes.length).toBeDefined()
+  })
+
 })
